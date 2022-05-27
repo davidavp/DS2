@@ -9,22 +9,63 @@ import java.util.Scanner;
     **/
 
 public class AlterarPalavra {
-    public void mudarpalavra() {
 
-        Scanner escreva = new Scanner(System.in);
+    private String frase, palavraEscolhida, palavraSubstituta, novaFrase;
+    Scanner escreva = new Scanner(System.in);
 
-        System.out.print("Escoreva a frase: ");
-        String frase = escreva.nextLine();
+    public AlterarPalavra() {
+        setFrase(frase);
+        setPalavraEscolhida(palavraEscolhida);
+        setPalavraSubstituta(palavraSubstituta);
+    }
 
-        System.out.print("Escolha uma palavra da frase para mudar: ");
-        String palavraEscolhida = escreva.nextLine();
+    public String getFrase() {
+        return frase;
+    }
 
-        System.out.print("Escolha a nova palavra: ");
-        String palavraSubstituta = escreva.nextLine();
+    public void setFrase(String frase) {
+        this.frase = frase;
+    }
 
-        String novaFrase = frase.replaceAll(palavraEscolhida, palavraSubstituta);
+    public String getPalavraEscolhida() {
+        return palavraEscolhida;
+    }
 
-        System.out.println("A frase era: " + frase);
-        System.out.println("A frase ficou: " + novaFrase);
+    public void setPalavraEscolhida(String palavraEscolhida) {
+        this.palavraEscolhida = palavraEscolhida;
+    }
+
+    public String getPalavraSubstituta() {
+        return palavraSubstituta;
+    }
+
+    public void setPalavraSubstituta(String palavraSubstituta) {
+        this.palavraSubstituta = palavraSubstituta;
+    }
+
+    public String getNovaFrase() {
+        return novaFrase;
+    }
+
+        public void setNovaFrase(String novaFrase) {
+            this.novaFrase = novaFrase;
+        }
+
+    public void mudarPalavra() {
+
+        System.out.print("Escreva a nova frase: ");
+        setFrase(escreva.nextLine());
+
+        System.out.print("Escolha a palavra para mudar: ");
+        setPalavraEscolhida(escreva.nextLine());
+
+        System.out.print("Digite a palavra substituta: ");
+        setPalavraSubstituta(escreva.nextLine());
+
+        System.out.print("\nA nova frase é: ");
+        setNovaFrase(getFrase().replaceAll(getPalavraEscolhida(), getPalavraSubstituta()));
+
+        System.out.print("\nA frase era: " + getFrase());
+        System.out.print("\nA frase ficou: " + novaFrase);
     }
 }
