@@ -2,11 +2,11 @@ package Lista00.q1;
 
 import java.util.Scanner;
 
-    /**
-    Construa uma classe que solicite uma frase escrita pelo usuário. Peça ao usuário para
-    escolher uma palavra da frase escrita e substituí-la por outra palavra. (Utilize o método
-    replace()).
-    **/
+/**
+ * Construa uma classe que solicite uma frase escrita pelo usuário. Peça ao usuário para
+ * escolher uma palavra da frase escrita e substituí-la por outra palavra. (Utilize o método
+ * replace()).
+ **/
 
 public class AlterarPalavra {
 
