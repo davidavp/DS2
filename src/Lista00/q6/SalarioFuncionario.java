@@ -4,41 +4,42 @@ import java.util.Scanner;
 
 public class SalarioFuncionario {
 
-    private int salario, salaFunc, totalSala;
+    private double salario, salaFunc, totalSala;
     Scanner escreva = new Scanner(System.in);
 
     public SalarioFuncionario() {}
 
-    public SalarioFuncionario(int salario, int salaFunc) {
+    public SalarioFuncionario(double salario, double salaFunc, double totalSala) {
         setSalario(salario);
         setSalaFunc(salaFunc);
+        setTotalSala(totalSala);
     }
 
-    public int getSalario() {
+    public double getSalario() {
         return salario;
     }
 
-    public void setSalario(int salario) {
+    public void setSalario(double salario) {
         this.salario = salario;
     }
 
-    public int getSalaFunc() {
+    public double getSalaFunc() {
         return salaFunc;
     }
 
-    public void setSalaFunc(int salaFunc) {
+    public void setSalaFunc(double salaFunc) {
         this.salaFunc = salaFunc;
     }
 
-    public int getTotalSala() {
+    public double getTotalSala() {
         return totalSala;
     }
 
-    public void setTotalSala(int totalSala) {
+    public void setTotalSala(double totalSala) {
         this.totalSala = totalSala;
     }
 
-    public int qtdSalaraio() {
+    public double qtdSalaraio() {
         System.out.print("Qual o valor do salário mínimo atual: ");
         setSalario(escreva.nextInt());
 
