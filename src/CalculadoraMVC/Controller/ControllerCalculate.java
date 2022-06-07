@@ -1,7 +1,7 @@
-package Prova3P.Controller;
+package CalculadoraMVC.Controller;
 
 
-import Prova3P.View.ViewCalculate;
+import CalculadoraMVC.View.ViewCalculate;
 
 public class ControllerCalculate {
     public ViewCalculate view;

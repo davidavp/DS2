@@ -1,4 +1,4 @@
-package Prova3P.Model;
+package CalculadoraMVC.Model;
 
 public class ModelCalculate {
 

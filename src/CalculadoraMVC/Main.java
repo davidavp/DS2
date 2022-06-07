@@ -1,6 +1,6 @@
-package Prova3P;
+package CalculadoraMVC;
 
-import Prova3P.Controller.ControllerCalculate;
+import CalculadoraMVC.Controller.ControllerCalculate;
 
 public class Main {
     public static void main(String[] args) {

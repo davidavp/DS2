@@ -1,12 +1,11 @@
-package Prova3P.View;
+package CalculadoraMVC.View;
 
-import Prova3P.Model.ModelCalculate;
+import CalculadoraMVC.Model.ModelCalculate;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
-import javax.swing.plaf.multi.MultiLabelUI;
 
 public class ViewCalculate extends JFrame {
     JTextField firtNumSum = new JTextField(10);
